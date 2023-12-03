@@ -1,25 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
-
+import ColorFlipper from "./ColorFlipper";
+// let i=0
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    // i+=10
+    // async function f() {
+    //
+    //     let promise = new Promise((resolve, reject) => {
+    //         setTimeout(() => resolve(i < 56 ? App() : ''), 5000)
+    //     });
+    //     let result = await promise
+    // }
+
+    // setTimeout(i < 56? App():'', 5000)
+    // setTimeout(function (){App()},1000)
+    return (
+        // <div>
+        //     <div style={{backgroundColor: `rgb(${i},${i + 10},${i + 20})`}} ></div>
+        //     {console.log(i)}
+        // </div>
+        <ColorFlipper />
+    );
+
 }
 
 export default App;
